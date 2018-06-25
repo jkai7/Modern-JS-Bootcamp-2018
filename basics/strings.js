@@ -10,7 +10,7 @@ console.log(fullName);
 
 //challenge == 1
 
-let city = "Miami";
+let city = "Miami";//or "Miami, "
 let country = "US";
 
 let location = city + ", " + country;
