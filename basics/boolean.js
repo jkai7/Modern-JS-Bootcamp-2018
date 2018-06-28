@@ -2,9 +2,9 @@ let temp = 33;
 let isFreezing = temp <= 32;
 
 if (isFreezing) {
-    console.log("It's FREEZING outside!");
+    console.log("It's FREEZING!");
 }else{
-   console.log("It's not freezing");
+   console.log("It's not that cold.");
 }
 
 // console.log(isFreezing);
