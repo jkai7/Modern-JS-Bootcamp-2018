@@ -23,9 +23,9 @@ let tipCalculator = function (total, tipPercent = 0.2) {
     return total * tipPercent
 }
 
-let tipValue = tipCalculator(100)
+let tipValue = tipCalculator(150)
 console.log(tipValue);
 
 
-let tipValue2 = tipCalculator(100, 0.3)
+let tipValue2 = tipCalculator(150, 0.3)
 console.log(tipValue2);
