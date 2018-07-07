@@ -15,11 +15,9 @@ if (name === undefined) {
 let square = function (num) {
     console.log(num)
 }
-
 let result = square();
 console.log(result)//undefined as function return value
 
-//
 let age = 31
 
 age = null //explicity cleared 
