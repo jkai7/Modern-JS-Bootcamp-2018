@@ -158,11 +158,11 @@ let accountReset = function (account) {
 
 //========Calling The Function(s)==============
 
-addIncome(myAccount, 1000);
+addIncome(myAccount, 2000);
 
-addExpense(myAccount, 2.50);
+addExpense(myAccount, 5.00);
 
-addExpense(myAccount, 165);
+addExpense(myAccount, 176.23);
 
 console.log(getAccountSummarry(myAccount))
 
