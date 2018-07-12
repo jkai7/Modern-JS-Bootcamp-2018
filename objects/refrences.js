@@ -124,7 +124,7 @@
 //====================================
 
 let myAccount = {
-    name: 'Ashley Chen',
+    name: 'Jens Kai',
     expenses: 0,
     income: 0,
 }
