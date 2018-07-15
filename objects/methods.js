@@ -9,10 +9,12 @@ let restaurant = {
         console.log(newGuestCount)
         return newGuestCount
     },
+    
     removeParty: function (partySize) { 
         console.log( this.geustCount - partySize)
         return  this.geustCount - partySize
     },
+    
     checkAvailability: function (partySize) {
         let seatsLeft = this.guestCapacity - this.geustCount
         console.log(this.geustCount)
