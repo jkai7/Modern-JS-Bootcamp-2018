@@ -3,21 +3,20 @@
 let restaurant = {
     name: 'BWW',
     guestCapacity: 75,
-    geustCount: 0,
+    guestCount: 0,
     seatParty: function (partySize) {
-        let newGuestCount = this.geustCount + partySize
-        console.log(newGuestCount)
-        return newGuestCount
+        this.guestCount = this.guestCount + partySize
+        return this.guestCount
     },
     
     removeParty: function (partySize) { 
-        console.log( this.geustCount - partySize)
-        return  this.geustCount - partySize
+        this.guestCount = this.guestCount - partySize
+        return   this.guestCount
     },
     
     checkAvailability: function (partySize) {
-        let seatsLeft = this.guestCapacity - this.geustCount
-        console.log(this.geustCount)
+        let seatsLeft = this.guestCapacity - this.guestCount
+        console.log(this.guestCount)
         return partySize <= seatsLeft
     }
 };
