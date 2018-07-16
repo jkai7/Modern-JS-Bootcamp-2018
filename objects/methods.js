@@ -6,12 +6,12 @@ let restaurant = {
     guestCount: 0,
     seatParty: function (partySize) {
         this.guestCount = this.guestCount + partySize
-        return this.guestCount
+        //return this.guestCount
     },
     
     removeParty: function (partySize) { 
         this.guestCount = this.guestCount - partySize
-        return   this.guestCount
+        //return this.guestCount
     },
     
     checkAvailability: function (partySize) {
@@ -30,3 +30,6 @@ restaurant.seatParty(72)
 console.log(restaurant.checkAvailability(4))
 restaurant.removeParty(5)
 console.log(restaurant.checkAvailability(4))
+
+
+
