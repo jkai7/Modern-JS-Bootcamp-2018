@@ -37,7 +37,7 @@
 
     //=> instructor solution
 
- //=> solution #1 ==================================== 
+ //=> solution #1 ====================================
  let isValidPassword2 = function (password) {
         if (password.length >= 8 && !password.includes('password')) {
             return true
