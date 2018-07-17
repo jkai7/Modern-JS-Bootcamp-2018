@@ -4,47 +4,47 @@
 
 //my solution
 
-let gradeCalc = function (studentScore, totalPossibleScore = 20) {
+// let gradeCalc = function (studentScore, totalPossibleScore = 20) {
 
-    let percent = (studentScore / totalPossibleScore) * 100 
+//     let percent = (studentScore / totalPossibleScore) * 100 
 
 
-    if (percent <= 59) {
+//     if (percent <= 59) {
         
-        letterGrade = 'F'
+//         letterGrade = 'F'
     
-    }else if (percent >= 60 && percent <= 69) {
+//     }else if (percent >= 60 && percent <= 69) {
         
-        letterGrade = 'D'
+//         letterGrade = 'D'
     
-    }else if (percent >= 70 && percent <= 79) {
+//     }else if (percent >= 70 && percent <= 79) {
         
-        letterGrade = 'C'
+//         letterGrade = 'C'
     
-    }else if (percent >= 80 && percent <= 89) {
+//     }else if (percent >= 80 && percent <= 89) {
         
-        letterGrade = 'B'
+//         letterGrade = 'B'
     
-    }else if (percent >= 90) {
+//     }else if (percent >= 90) {
         
-        letterGrade = 'A'
+//         letterGrade = 'A'
     
-    }else{
-        letterGrade = 'Invalid'
-    }
+//     }else{
+//         letterGrade = 'Invalid'
+//     }
        
-    return `You got a ${percent}% on your test. Your grade is a ${letterGrade}!`
+//     return `You got a ${percent}% on your test. Your grade is a ${letterGrade}!`
 
-}
+// }
 
-let grade = gradeCalc(15)
-console.log(grade);
+// let grade = gradeCalc(15)
+// console.log(grade);
 
 //video solution
 
-let gradeCalc = function (studentScore, totalPossibleScore) {
+const gradeCalc = function (studentScore, totalPossibleScore) {
 
-    let percent = (studentScore / totalPossibleScore) * 100 
+    const percent = (studentScore / totalPossibleScore) * 100 
     let letterGrade = ''
 
 
@@ -74,5 +74,5 @@ let gradeCalc = function (studentScore, totalPossibleScore) {
 
 }
 
-let grade = gradeCalc(15, 20)
+const grade = gradeCalc(15, 20)
 console.log(grade);
