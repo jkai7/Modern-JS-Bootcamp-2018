@@ -18,6 +18,6 @@
 const todoList = ['walk the dog', 'brush teeth', 'do homework', 'shop for groceries', 'wash clothes']
 
 console.log(`you have ${todoList.length} things to do today`)
-console.log(`Todo: ${todoList[0]}`)
+console.log(`Todo: ${todoList[1]}`)
 console.log(`Todo: ${todoList[todoList.length - 2]}`)
 
