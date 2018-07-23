@@ -15,16 +15,16 @@
     //=> print first and second to last items
         //=> To-do: walk the dog
 
-    const todoList = ['walk the dog', 'brush teeth', 'do homework', 'shop for groceries', 'wash clothes', 'go to muay thai']
+// const todoList = ['walk the dog', 'brush teeth', 'do homework', 'shop for groceries', 'wash clothes', 'go to muay thai']
 
-console.log(`you have ${todoList.length} things to do today`)
+// console.log(`you have ${todoList.length} things to do today`)
 
 //=> challenge 3
-todoList.splice(2,1) // delete 3rd item
-todoList.push('exercise') // add new item to the end
-todoList.shift() // remove the first item 
+// todoList.splice(2,1) // delete 3rd item
+// todoList.push('exercise') // add new item to the end
+// todoList.shift() // remove the first item 
 
-console.log(todoList)
+// console.log(todoList)
 // console.log(`Todo: ${todoList[0]}`)
 // console.log(`Todo: ${todoList[todoList.length - 2]}`) // second to last item
 
@@ -57,6 +57,21 @@ console.log(todoList)
 
 // console.log(notes.length)
 // console.log(notes)
+
+//=> looping w/ forEach =================================================
+
+const notes = ['note 1', 'note 2', 'note 3']
+
+notes[2] = 'new note 3'
+
+
+notes.forEach(function(item, index){
+    console.log(index)
+    console.log(item)
+}) //=> argument takes a function its callback function - function that is passed through another function. it can also be described as a method
+
+console.log(notes.length)
+console.log(notes)
 
 
 
