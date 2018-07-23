@@ -15,7 +15,7 @@
     //=> print first and second to last items
         //=> To-do: walk the dog
 
-    const todoList = ['walk the dog', 'brush teeth', 'do homework', 'shop for groceries', 'wash clothes']
+    const todoList = ['walk the dog', 'brush teeth', 'do homework', 'shop for groceries', 'wash clothes', 'go to muay thai']
 
 console.log(`you have ${todoList.length} things to do today`)
 
