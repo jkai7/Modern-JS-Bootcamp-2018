@@ -74,5 +74,7 @@ console.log(notes.length)
 console.log(notes)
 
 
+//=> for loop =========================================
+
 
 
