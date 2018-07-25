@@ -60,21 +60,31 @@
 
 //=> looping w/ forEach =================================================
 
+// const notes = ['note 1', 'note 2', 'note 3']
+
+// notes[2] = 'new note 3'
+
+
+// notes.forEach(function(item, index){
+//     console.log(index)
+//     console.log(item)
+// }) //=> argument takes a function its callback function - function that is passed through another function. it can also be described as a method
+
+// console.log(notes.length)
+// console.log(notes)
+
+
+//=> for loop =========================================
+
 const notes = ['note 1', 'note 2', 'note 3']
 
 notes[2] = 'new note 3'
 
 
-notes.forEach(function(item, index){
-    console.log(index)
-    console.log(item)
-}) //=> argument takes a function its callback function - function that is passed through another function. it can also be described as a method
-
 console.log(notes.length)
 console.log(notes)
+        
 
-
-//=> for loop =========================================
-
-
-
+for (let count = 0; count <= 2; count++) {
+    console.log(count)
+}
