@@ -78,13 +78,27 @@
 
 const notes = ['note 1', 'note 2', 'note 3']
 
-notes[2] = 'new note 3'
+// notes[2] = 'new note 3'
 
 
-console.log(notes.length)
-console.log(notes)
+// console.log(notes.length)
+// console.log(notes)
         
 
-for (let count = 0; count <= 2; count++) {
-    console.log(count)
-}
+// for (let count = 0; count <= 2; count++) {
+//     console.log(count)
+// }// count up
+
+// for (let count = 2; count >= 0; count--) {
+//     console.log(count)
+// }// count down
+
+// for (let count = 0; count < notes.length; count++) {
+//     console.log(notes[count]);
+// }
+
+// console.log('========================')
+
+// for (let count = notes.length - 1; count >= 0; count--) {
+//     console.log(notes[count]);
+// }
