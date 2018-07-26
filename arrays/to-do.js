@@ -14,7 +14,6 @@ todos.push('go to muay thai')
     //     console.log(`${index + 1}. ${item}`)
     // });
     
-    // console.log('========================')
     
     // //=> video solution
     // todos.forEach(function(todo, index){
@@ -22,14 +21,14 @@ todos.push('go to muay thai')
     //     console.log(`${num}. ${todo}`)
     // });
 
+//=> for loop ==============================
 
-    //=> for loop ==============================
+    // for (let count = 0; count < todos.length; count++) {
+    //     // const num = count + 1 
+    //     // const todo = todos[count]
+    //     // console.log(`${num}. ${todo})
+    //     console.log(`${[count + 1]}. ${todos[count]}`)
+    // }
 
-    for (let count = 0; count < todos.length; count++) {
-        // const num = count + 1 
-        // const todo = todos[count]
-        // console.log(`${num}. ${todo})
-        console.log(`${[count + 1]}. ${todos[count]}`)
-    }
 
-    console.log('========================')
+//=> searching arrays part 1 =========================

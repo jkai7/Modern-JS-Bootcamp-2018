@@ -76,7 +76,7 @@
 
 //=> for loop =========================================
 
-const notes = ['note 1', 'note 2', 'note 3']
+// const notes = ['note 1', 'note 2', 'note 3']
 
 // notes[2] = 'new note 3'
 
@@ -102,3 +102,29 @@ const notes = ['note 1', 'note 2', 'note 3']
 // for (let count = notes.length - 1; count >= 0; count--) {
 //     console.log(notes[count]);
 // }
+
+//=> searching an array part 1 ================================
+
+const notes = [{}, {
+    title: 'my next trip',
+    body: 'I want to go to Spain'
+}, {
+    title: 'start fasting',
+    body: 'I want to start fasting'
+}, {
+    title: 'JS tutorials',
+    body: 'Take more javascript tutorials'
+}];
+
+console.log(notes.length)
+console.log(notes)
+
+const index = notes.findIndex(function(note, index) {
+    console.log(note)
+    return note.title === 'start fasting'
+}); 
+// findIndex() works with an array of objects
+// indexOf is going to return items position in array
+    // if you get - 1, the item doesnt exist in array
+
+console.log(index)
