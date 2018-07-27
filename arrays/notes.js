@@ -105,7 +105,7 @@
 
 //=> searching an array part 1 ================================
 
-const notes = [{}, {
+const notes = [{
     title: 'my next trip',
     body: 'I want to go to Spain'
 }, {
@@ -113,7 +113,10 @@ const notes = [{}, {
     body: 'I want to start fasting'
 }, {
     title: 'JS tutorials',
-    body: 'Take more javascript tutorials'
+    body: 'Take more javascript tutorials', 
+}, {
+    title: 'Follow Up',
+    body: 'Follow up on all of the jobs you applied to'
 }];
 
 console.log(notes.length)
