@@ -120,6 +120,7 @@ const notes = [{
 }];
 
 console.log(notes.length)
+console.log(notes[1])
 console.log(notes)
 
 const index = notes.findIndex(function(note, index) {
@@ -131,3 +132,4 @@ const index = notes.findIndex(function(note, index) {
     // if you get - 1, the item doesnt exist in array
 
 console.log(index)
+
