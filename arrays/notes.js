@@ -119,9 +119,9 @@ const notes = [{
     body: 'Follow up on all of the jobs you applied to'
 }];
 
-console.log(notes.length)
-console.log(notes[1])
-console.log(notes)
+// console.log(notes.length)
+// console.log(notes)
+
 
 const index = notes.findIndex(function(note, index) {
     console.log(note)
