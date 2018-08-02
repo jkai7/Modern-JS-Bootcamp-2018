@@ -158,9 +158,9 @@ let accountReset = function (account) {
 
 //========Calling The Function(s)==============
 
-addIncome(myAccount, 1000);
+addIncome(myAccount, 5000);
 
-addExpense(myAccount, 5.00);
+addExpense(myAccount, 6.50);
 
 addExpense(myAccount, 176.23);
 
