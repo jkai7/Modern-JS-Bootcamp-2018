@@ -1,6 +1,6 @@
-const giveMeANumber = function (num) {
-    return num
-}
+// const giveMeANumber = function (num) {
+//     return num
+// }
 
 // const mathOperation = function (operator) {
 //     if (operator === '+') {
