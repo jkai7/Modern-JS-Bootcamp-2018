@@ -125,7 +125,7 @@ const notes = [{
 
 const index = notes.findIndex(function(note, index) {
     console.log(note)
-    return note.title === 'start fasting'
+    return note.title === 'started fasting!'
 }); 
 // findIndex() works with an array of objects
 // indexOf is going to return items position in array
