@@ -131,5 +131,5 @@ const index = notes.findIndex(function(individualItem, index) {
 // indexOf is going to return items position in array
     // if you get - 1, the item doesnt exist in array
 
-console.log(index)
+    console.log(index)
 
