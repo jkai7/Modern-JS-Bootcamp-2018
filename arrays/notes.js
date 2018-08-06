@@ -106,16 +106,16 @@
 //=> searching an array part 1 ================================
 
 const notes = [{
-    title: 'my next trip',
+    title: 'Get a job',
     body: 'I want to go to Spain'
 }, {
-    title: 'start fasting',
-    body: 'I want to start fasting'
+    title: 'Continue fasting',
+    body: 'I want to continue to fast'
 }, {
-    title: 'JS tutorials',
+    title: 'Code more',
     body: 'Take more javascript tutorials', 
 }, {
-    title: 'Follow Up',
+    title: 'Apply for jobs',
     body: 'Follow up on all of the jobs you applied to'
 }];
 
@@ -125,7 +125,7 @@ const notes = [{
 
 const index = notes.findIndex(function(individualItem, index) {
     console.log(note)
-    return note.title === 'started fasting'
+    return note.title === 'Go shopping for clothes'
 }); 
 // findIndex() works with an array of objects
 // indexOf is going to return items position in array
