@@ -119,12 +119,20 @@ const notes = [{
     body: 'Follow up on all of the jobs you applied to'
 }];
 
+
 const findNote = function (notes, noteTitle) {
     const index = notes.findIndex(function(note, index) {
         return note.title.toLowerCase() === noteTitle.toLowerCase()
     })
-    return notes[index]
+    return notes[index];
 }
+
+// const findNote = function (notes, noteTitle) {
+//     const index = notes.findIndex(function(note, index) {
+//         return note.title.toLowerCase() === noteTitle.toLowerCase()
+//     })
+//     return notes[index]
+// }
 
 const note = findNote(notes, 'apply for jobs')
 console.log(note);
