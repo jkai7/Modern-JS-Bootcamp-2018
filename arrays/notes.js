@@ -119,17 +119,27 @@ const notes = [{
     body: 'Follow up on all of the jobs you applied to'
 }];
 
+const findNote = function (notes, noteTitle) {
+    const index = notes.findIndex(function(note, index) {
+        return note.title.toLowerCase() === noteTitle.toLowerCase()
+    })
+    return notes[index]
+}
+
+const note = findNote(notes, 'apply for jobs')
+console.log(note);
+
 // console.log(notes.length)
 // console.log(notes)
 
 
-const index = notes.findIndex(function(individualItem, index) {
-    console.log(note)
-    return note.title === 'Go shopping for clothes'
-}); 
-// findIndex() works with an array of objects
-// indexOf is going to return items position in array
-    // if you get - 1, the item doesnt exist in array
+// const index = notes.findIndex(function(individualItem, index) {
+//     console.log(note)
+//     return note.title === 'Go shopping for clothes'
+// }); 
+// // findIndex() works with an array of objects
+// // indexOf is going to return items position in array
+//     // if you get - 1, the item doesnt exist in array
 
-    console.log(index)
+//     console.log(index)
 
