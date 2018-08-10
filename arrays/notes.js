@@ -137,8 +137,8 @@ const findNote = function (notes, noteTitle) {
 const note = findNote(notes, 'apply for jobs')
 console.log(note);
 
-// console.log(notes.length)
-// console.log(notes)
+console.log(notes.length)
+console.log(notes)
 
 
 // const index = notes.findIndex(function(individualItem, index) {
