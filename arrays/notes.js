@@ -105,7 +105,7 @@
 
 //=> searching an array part 1 ================================
 
-const notes = [{
+const notes = [{ 
     title: 'Get a job',
     body: 'I want to go to Spain'
 }, {
