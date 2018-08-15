@@ -120,25 +120,27 @@ const notes = [{
 }];
 
 
+// const findNote = function (notes, noteTitle) {
+//     return notes.find(function(note, index) {
+//        return note.title.toLowerCase() === noteTitle.toLowerCase()
+//     })
+// }
+
+
 const findNote = function (notes, noteTitle) {
     const index = notes.findIndex(function(note, index) {
-        return note.title.toLowerCase() === noteTitle.toLowerCase()
+      return note.title.toLowerCase() === noteTitle.toLowerCase()
     })
+    console.log(index)
     return notes[index];
 }
 
-// const findNote = function (notes, noteTitle) {
-//     const index = notes.findIndex(function(note, index) {
-//         return note.title.toLowerCase() === noteTitle.toLowerCase()
-//     })
-//     return notes[index]
-// }
 
-const note = findNote(notes, 'apply for jobs')
+const note = findNote(notes, 'code more')
 console.log(note);
 
-console.log(notes.length)
-console.log(notes)
+// console.log(notes.length)
+// console.log(notes)
 
 
 // const index = notes.findIndex(function(individualItem, index) {

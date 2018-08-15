@@ -1,8 +1,32 @@
-const todos = ['walk the dog', 'brush teeth', 'do homework', 'shop for groceries']
+const todos = [{
+text:'walk the dog',
+completed: true},
+{
+text:'brush teeth',
+completed: false},
+{
+text:'do homework',
+completed: true},
+{
+text:'shop for groceries',
+completed: false}];
 
-// todos.splice(2, 1)
-todos.push('go to muay thai')
-todos.shift()
+const deleteTodos = function (todos, todoText) {
+    const index = todos.findIndex(function(todo) {
+        return todo.text.toLowerCase() === todoText.toLowerCase()
+    })
+    if (index > -1) { //if todo item exists 
+        todos.splice(index, 1)
+    }
+}
+
+const done = deleteTodos(todos, 'do homework')
+console.log(todos)
+
+// todos.splice(2,1)
+// todos.push('go to muay thai')
+// todos.shift()
+// console.log(todos)
 
 // console.log(`you have ${todos.length} todos!`)
 
@@ -31,4 +55,13 @@ todos.shift()
     // }
 
 
-//=> searching arrays part 1 =========================
+//=> searching arrays part 2 solution(s) =========================
+
+// const deleteTodos = function (todos, todoText) {
+//     const index = todos.findIndex(function(todo) {
+//         return todo.text.toLowerCase() === todoText.toLowerCase()
+//     })
+//     if (index > -1) { //if todo item exists 
+//         todos.splice(index, 1)
+//     }
+// }
