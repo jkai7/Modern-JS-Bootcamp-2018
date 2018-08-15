@@ -2,7 +2,7 @@ const todos = ['walk the dog', 'brush teeth', 'do homework', 'shop for groceries
 
 // todos.splice(2, 1)
 todos.push('go to muay thai')
-// todos.shift()
+todos.shift()
 
 // console.log(`you have ${todos.length} todos!`)
 
