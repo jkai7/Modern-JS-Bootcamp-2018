@@ -1,27 +1,45 @@
 const todos = [{
-text:'walk the dog',
-completed: true},
+    text:'walk the dog',
+    complete: true},
 {
-text:'brush teeth',
-completed: false},
+    text:'brush teeth',
+    complete: false},
 {
-text:'do homework',
-completed: true},
+    text:'do homework',
+    complete: true},
 {
-text:'shop for groceries',
-completed: false}];
+    text:'shop for groceries',
+    complete: false},
+{
+    text: 'Practice Muay Thai',
+    complete: false
+}];
 
-const deleteTodos = function (todos, todoText) {
-    const index = todos.findIndex(function(todo) {
-        return todo.text.toLowerCase() === todoText.toLowerCase()
+//= filter array ==============================================================
+
+const thingsLeftTodo = function (todosLeft) {
+
+    return todos.filter(function(todo, index) { // dont need to put index if not needeed
+        return todo.complete === false // or return !todo.complete
     })
-    if (index > -1) { //if todo item exists 
-        todos.splice(index, 1)
-    }
+
 }
 
-const done = deleteTodos(todos, 'do homework')
-console.log(todos)
+console.log(thingsLeftTodo(todos))
+
+//= END fiter =================================================================
+
+// const deleteTodos = function (todos, todoText) {
+//     const index = todos.findIndex(function(todo) {
+//         return todo.text.toLowerCase() === todoText.toLowerCase()
+//     })
+//     if (index > -1) { //if todo item exists 
+//         todos.splice(index, 1)
+//     }
+// }
+
+// const done = deleteTodos(todos, 'do homework')
+// console.log(todos)
 
 // todos.splice(2,1)
 // todos.push('go to muay thai')
@@ -45,7 +63,7 @@ console.log(todos)
     //     console.log(`${num}. ${todo}`)
     // });
 
-//=> for loop ==============================
+//=> for loop =================================================================
 
     // for (let count = 0; count < todos.length; count++) {
     //     // const num = count + 1 
@@ -55,7 +73,7 @@ console.log(todos)
     // }
 
 
-//=> searching arrays part 2 solution(s) =========================
+//=> searching arrays part 2 solution(s) =====================================
 
 // const deleteTodos = function (todos, todoText) {
 //     const index = todos.findIndex(function(todo) {

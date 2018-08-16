@@ -28,7 +28,7 @@
 // console.log(`Todo: ${todoList[0]}`)
 // console.log(`Todo: ${todoList[todoList.length - 2]}`) // second to last item
 
-//=> method calls =====================================
+//=> method calls =============================================================
 
 // const notes = ['note 1', 'note 2', 'note 3']
 
@@ -58,7 +58,7 @@
 // console.log(notes.length)
 // console.log(notes)
 
-//=> looping w/ forEach =================================================
+//=> looping w/ forEach ======================================================
 
 // const notes = ['note 1', 'note 2', 'note 3']
 
@@ -74,7 +74,7 @@
 // console.log(notes)
 
 
-//=> for loop =========================================
+//=> for loop ===============================================================
 
 // const notes = ['note 1', 'note 2', 'note 3']
 
@@ -103,21 +103,21 @@
 //     console.log(notes[count]);
 // }
 
-//=> searching an array part 1 ================================
+//=> searching an array part 1 ===============================================
 
-const notes = [{ 
-    title: 'Get a job',
-    body: 'I want to go to Spain'
-}, {
-    title: 'Continue fasting',
-    body: 'I want to continue to fast'
-}, {
-    title: 'Code more',
-    body: 'Take more javascript tutorials', 
-}, {
-    title: 'Apply for jobs',
-    body: 'Follow up on all of the jobs you applied to'
-}];
+// const notes = [{ 
+//     title: 'Get a job',
+//     body: 'I want to go to Spain'
+// }, {
+//     title: 'Continue fasting',
+//     body: 'I want to continue to fast'
+// }, {
+//     title: 'Code more',
+//     body: 'Take more javascript tutorials', 
+// }, {
+//     title: 'Apply for jobs',
+//     body: 'Follow up on all of the jobs you applied to'
+// }];
 
 
 // const findNote = function (notes, noteTitle) {
@@ -127,17 +127,17 @@ const notes = [{
 // }
 
 
-const findNote = function (notes, noteTitle) {
-    const index = notes.findIndex(function(note, index) {
-      return note.title.toLowerCase() === noteTitle.toLowerCase()
-    })
-    console.log(index)
-    return notes[index];
-}
+// const findNote = function (notes, noteTitle) {
+//     const index = notes.findIndex(function(note, index) {
+//       return note.title.toLowerCase() === noteTitle.toLowerCase()
+//     })
+//     console.log(index)
+//     return notes[index];
+// }
 
 
-const note = findNote(notes, 'code more')
-console.log(note);
+// const note = findNote(notes, 'code more')
+// console.log(note);
 
 // console.log(notes.length)
 // console.log(notes)
@@ -153,3 +153,33 @@ console.log(note);
 
 //     console.log(index)
 
+//= filtering arrays ===================================================
+
+const notes = [{ 
+    title: 'Get a job',
+    body: 'I want to go to Spain'
+}, {
+    title: 'Continue fasting',
+    body: 'I want to continue to fast'
+}, {
+    title: 'Code more',
+    body: 'Take more javascript tutorials', 
+}, {
+    title: 'Apply for jobs',
+    body: 'Follow up on all of the jobs you applied to'
+}];
+
+const findNotes = function (notes, query) {
+
+ 
+    return notes.filter(function(note, index) {
+        const isTitleMatch = note.title.toLocaleLowerCase().includes(query.toLocaleLowerCase())
+        
+        const isbodyMatch = note.body.toLocaleLowerCase().includes(query.toLocaleLowerCase())
+        
+        return isTitleMatch || isbodyMatch
+    })
+
+}
+
+console.log(findNotes(notes, 'apply'));
