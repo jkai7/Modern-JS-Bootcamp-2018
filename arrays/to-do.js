@@ -1,31 +1,50 @@
 const todos = [{
-    text:'walk the dog',
+    text:'Walk the dog',
     complete: true},
 {
-    text:'brush teeth',
+    text:'Brush teeth',
     complete: false},
 {
-    text:'do homework',
+    text:'Do homework',
     complete: true},
 {
-    text:'shop for groceries',
+    text:'Shop for groceries',
     complete: false},
 {
     text: 'Practice Muay Thai',
     complete: false
 }];
 
-//= filter array ==============================================================
 
-const thingsLeftTodo = function (todosLeft) {
+//= Sorting arrays ==============================================================
 
-    return todos.filter(function(todo, index) { // dont need to put index if not needeed
-        return todo.complete === false // or return !todo.complete
+const sortTodos = function (todos) {
+    todos.sort(function(a, b) {
+        if (a.complete === false > b.complete === true) { // use && instead of > or < with boolean values - (!a.complete && b.complete)
+            return -1
+        } else if (b.complete === false > a.complete === true) {
+            return 1
+        } else {
+            return 0
+        }
     })
-
 }
 
-console.log(thingsLeftTodo(todos))
+sortTodos(todos)
+console.log(todos)
+
+
+//= filter array ==============================================================
+
+// const thingsLeftTodo = function (todosLeft) {
+
+//     return todos.filter(function(todo, index) { // dont need to put index if not needeed
+//         return todo.complete === false // or return !todo.complete
+//     })
+
+// }
+
+// console.log(thingsLeftTodo(todos))
 
 //= END fiter =================================================================
 

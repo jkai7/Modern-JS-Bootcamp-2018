@@ -153,7 +153,38 @@
 
 //     console.log(index)
 
-//= filtering arrays ===================================================
+//= filtering arrays ==========================================================
+
+// const notes = [{ 
+//     title: 'Get a job',
+//     body: 'I want to go to Spain'
+// }, {
+//     title: 'Continue fasting',
+//     body: 'I want to continue to fast'
+// }, {
+//     title: 'Code more',
+//     body: 'Take more javascript tutorials', 
+// }, {
+//     title: 'Apply for jobs',
+//     body: 'Follow up on all of the jobs you applied to'
+// }];
+
+// const findNotes = function (notes, query) {
+
+ 
+//     return notes.filter(function(note, index) {
+//         const isTitleMatch = note.title.toLocaleLowerCase().includes(query.toLocaleLowerCase())
+        
+//         const isbodyMatch = note.body.toLocaleLowerCase().includes(query.toLocaleLowerCase())
+        
+//         return isTitleMatch || isbodyMatch
+//     })
+
+// }
+
+// console.log(findNotes(notes, 'apply'));
+
+//= Sorting arrays ==============================================================
 
 const notes = [{ 
     title: 'Get a job',
@@ -169,17 +200,19 @@ const notes = [{
     body: 'Follow up on all of the jobs you applied to'
 }];
 
-const findNotes = function (notes, query) {
+// console.log('march' < 'january')
 
- 
-    return notes.filter(function(note, index) {
-        const isTitleMatch = note.title.toLocaleLowerCase().includes(query.toLocaleLowerCase())
-        
-        const isbodyMatch = note.body.toLocaleLowerCase().includes(query.toLocaleLowerCase())
-        
-        return isTitleMatch || isbodyMatch
+const sortNotes = function (notes) {
+    notes.sort(function(a, b) {
+        if (a.title.toLowerCase() < b.title.toLowerCase()) {
+            return -1 // if a comes first
+        }else if (b.title.toLowerCase() < a.title.toLowerCase()) {
+            return 1 // if b comes first
+        }else{
+            return 0 // if the order doesnt need to be changed
+        }
     })
-
 }
 
-console.log(findNotes(notes, 'apply'));
+sortNotes(notes);
+console.log(notes);
