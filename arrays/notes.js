@@ -192,7 +192,7 @@ const notes = [{
 }, {
     title: 'Continue fasting',
     body: 'I want to continue to fast'
-}, {
+}, { 
     title: 'Code more',
     body: 'Take more javascript tutorials', 
 }, {
