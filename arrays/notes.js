@@ -212,7 +212,7 @@ const sortNotes = function (notes) {
             return 0 // if the order doesnt need to be changed
         }
     })
-}
+} 
 
 sortNotes(notes);
 console.log(notes);
