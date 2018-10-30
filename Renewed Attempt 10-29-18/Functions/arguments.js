@@ -16,11 +16,13 @@ let scoreText = getScore(undefined, 99);
 console.log(scoreText);
 
 // challenge - tip calculator
-
 let tip = function (total, tipPercent = 0.2) {
     return total * tipPercent 
 };
 
-console.log(tip(100));
+let getTip = tip(100);
+
+console.log(getTip);
+
 console.log(tip(100, 0.1));
 console.log(tip(100, 0.3));
