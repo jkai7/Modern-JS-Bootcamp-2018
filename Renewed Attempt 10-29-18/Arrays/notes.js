@@ -20,4 +20,6 @@ notes.unshift("My first note"); // Adds item to beginning of array
         // SPLICE manipulates MIDDLE of array
 notes.splice(1, 1, "New note") // First arg. is where youre trying to start the action, second - is how many things you want to remove, third - is what you want to add
 
+// Change value of given item with bracket notation
+notes[2] = "This is now the new Note 3"
     
