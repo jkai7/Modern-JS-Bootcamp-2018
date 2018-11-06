@@ -22,4 +22,9 @@ notes.splice(1, 1, "New note") // First arg. is where youre trying to start the 
 
 // Change value of given item with bracket notation
 notes[2] = "This is now the new Note 3"
+
+// Looping ------------
+notes.forEach(function (item, index) {
+    
+}) // takes function as an argument, it is a callback function - first arg. is the item, second arg. is the index(position of item)
     

@@ -12,5 +12,10 @@ const todo = ["Buy pet food", "Walk the dog", "Study", "Exercise", "Wash clothes
     todo.push("Take a shower");
     todo.shift();
 
-// Challenge #3 - 
+// Challenge #3 - use for each, 1. first item, 2. second item, etc
+
+todo.forEach(function (item, index) {
+    const position = index + 1;
+    // console.log(`${position}. ${item}`);
+});
     
