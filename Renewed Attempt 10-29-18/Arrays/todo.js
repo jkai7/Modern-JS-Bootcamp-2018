@@ -18,4 +18,10 @@ todo.forEach(function (item, index) {
     const position = index + 1;
     // console.log(`${position}. ${item}`);
 });
+
+// Challenge #4 - re-create forEach outcome with a for loop
+
+for (let count = 0; count < todo.length; count++) {
+    //console.log(`${count + 1}. ${todo[count]}`);
+};
     
