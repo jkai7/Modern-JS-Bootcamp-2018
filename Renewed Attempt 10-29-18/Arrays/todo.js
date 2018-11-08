@@ -85,8 +85,41 @@ const todo = [{
         });
     };
 
-    console.log(getThingsTodo(todo))
+    //console.log(getThingsTodo(todo))
 
-// CHALLENGE #7 - 
+// CHALLENGE #7 - sort by completed property
+
+    const sortTodos = function (todos) {
+        todos.sort(function (a, b) {
+            if (a.completed < b.completed) {
+                return -1 
+            } else if (b.completed < a.completed) {
+                return 1
+            } else {
+                return 0
+            };
+        });
+    };
+    
+    sortTodos(todo);
+    //console.log(todo);
+
+    // alt solution
+    const sortTodos2 = function (todos) {
+        todos.sort(function (a, b) {
+            if (!a.completed && b.completed) {
+                return -1 
+            } else if (!b.completed && a.completed) {
+                return 1
+            } else {
+                return 0
+            };
+        });
+    };
+    
+    sortTodos2(todo);
+    //console.log(todo);
+
+
 
     

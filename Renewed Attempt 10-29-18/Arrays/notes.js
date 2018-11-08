@@ -115,9 +115,29 @@ const notes = [{
                 });
         };
 
-        console.log(findNotes(notes, "work"))
+        //console.log(findNotes(notes, "work"))
 
 // SORTING ---------------------------------------------
 
+        //SORT - sorts the elements of an array, similar to indexOf. takes in a function which lets us to specify the exact comparison behavior(takes an optional compare function)       
+        const sortNotes = function (notes) {
+                notes.sort(function (a, b) {// function for sort is a compare function (if one thing should come before or after a thing)
+                        if (a.title.toLowerCase() < b.title.toLowerCase()) {
+                                return -1
+                        } else if (b.title.toLowerCase() < a.title.toLowerCase()) {
+                                return 1
+                        } else {
+                                return 0
+                        }//if a comes first: -1, if b comes first: 1, if the order is neither one: 0
+                });
+        };            
+
+        // console.log('a' < 'b') // < = before - returns true
+        // console.log('March' < 'January') // J comes first, returns false 
+        // console.log('a' < 'A')// capital letters come first - returns false
+        // console.log(false < true) // false comes before true, returns true
+
+        sortNotes(notes);
+        console.log(notes)
 
     
