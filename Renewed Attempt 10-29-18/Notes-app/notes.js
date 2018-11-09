@@ -37,9 +37,14 @@ const notes = [{
     //  });// take away element if it includes text
 
 // ADD new element -------------------------------------
-    const newP = document.createElement("p");
-        newP.textContent = "this is a new element"
+    // const newP = document.createElement("p");
+    //     newP.textContent = "this is a new element"
 
-    document.querySelector("body").appendChild(newP)
+    // document.querySelector("body").appendChild(newP)
 
+// EVENT LISTENER(S) -----------------------------------
+
+    document.querySelector("button").addEventListener("click", function (e) {
+        e.target.textContent = "I was Clicked!!!"
+    });// addElistener - takes a string and a callback funtion that runs when event fires. e is the arg and stands for the event
 

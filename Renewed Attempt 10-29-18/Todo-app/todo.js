@@ -54,7 +54,12 @@ const todo = [{
         document.querySelector("body").appendChild(todoList)
     });
 
-    //CHALLENGE #2 - 
+//CHALLENGE #2 - add button and add event listener that logs "I've added a todo"
+
+    document.querySelector("button").addEventListener("click", function (e) {
+        console.log("I've added a new todo!")
+    });
+
     
 
 
