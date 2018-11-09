@@ -44,7 +44,35 @@ const notes = [{
 
 // EVENT LISTENER(S) -----------------------------------
 
-    document.querySelector("button").addEventListener("click", function (e) {
+    document.querySelector("#create-note").addEventListener("click", function (e) {
         e.target.textContent = "I was Clicked!!!"
     });// addElistener - takes a string and a callback funtion that runs when event fires. e is the arg and stands for the event
+
+    // TARGETING w/ ID and CLASS
+
+    // document.querySelectorAll("button")[1].addEventListener("click", function (e) {
+    //     console.log("DELETE All Notes")
+    // });// only works if button is never moved. use id and classes instead
+
+    document.querySelector("#remove-all").addEventListener("click", function (e) {
+        document.querySelectorAll(".note").forEach(function (note) {
+            note.remove()
+        });
+    });// selectes button w/ id then in the event listener, selects all elements with ".note" class, loops through all of them w/ a forEach and then removes each one 
+
+    // Target SINGLE
+        // p
+        // #replace
+        // .item
+
+    // Target MULTIPLE
+        // p#order
+        // button.inventory
+        // h1#title.application
+        // h1.application#title
+
+
+
+
+
 

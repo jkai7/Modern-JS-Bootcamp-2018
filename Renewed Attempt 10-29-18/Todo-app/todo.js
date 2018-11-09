@@ -56,8 +56,14 @@ const todo = [{
 
 //CHALLENGE #2 - add button and add event listener that logs "I've added a todo"
 
-    document.querySelector("button").addEventListener("click", function (e) {
-        console.log("I've added a new todo!")
+    // document.querySelector("button").addEventListener("click", function (e) {
+    //     console.log("I've added a new todo!")
+    // });
+
+//CHALLENGE #3 - add id on to button, then target it by its id
+
+    document.querySelector("#add-todo").addEventListener("click", function (e) {
+        console.log("New Todo Added!")
     });
 
     
