@@ -45,9 +45,9 @@ const notes = [{
         
 //         };// loop in reverse
 
-//         for (let count = 0; count < notes.length; count++) {
-//         //console.log(notes[count]); // COUNT BECOMES THE INDEX(individual item) and we grab the item with its index using BRACKET NOTATION
-//         }; // loop through array
+        for (let count = 0; count < notes.length; count++) {
+                console.log(notes[count].body); // COUNT BECOMES THE INDEX(individual item) and we grab the item with its index using BRACKET NOTATION
+        }; // loop through array
 
 //         for (let count = notes.length -1; count >= 0; count--) {
 //         //console.log(notes[count]); // count becomes index and we grab the item with its index using bracket notation
@@ -99,45 +99,47 @@ const notes = [{
 // FILTERING -------------------------------------------
 
         // FILTER - creates new array with all elements that pass the test implemented by the provided function
-        const filteredNotes = notes.filter(function (note, index) {
-                const isTitleMatch = note.title.toLowerCase().includes("ne")// this is called method chaining
-                const isBodyMatch = note.body.toLowerCase().includes("ne")
-                        return isTitleMatch || isBodyMatch
-        });
+        // const filteredNotes = notes.filter(function (note, index) {
+        //         const isTitleMatch = note.title.toLowerCase().includes("ne")// this is called method chaining
+        //         const isBodyMatch = note.body.toLowerCase().includes("ne")
+        //                 return isTitleMatch || isBodyMatch
+        // });
 
-        //console.log(filteredNotes)
+        // //console.log(filteredNotes)
 
-        const findNotes = function (notes, query) {
-                return notes.filter(function (note, index) {
-                        const isTitleMatch = note.title.toUpperCase().includes(query.toUpperCase())
-                        const isBodyMatch = note.body.toUpperCase().includes(query.toUpperCase())
-                                return isTitleMatch || isBodyMatch
-                });
-        };
+        // const findNotes = function (notes, query) {
+        //         return notes.filter(function (note, index) {
+        //                 const isTitleMatch = note.title.toUpperCase().includes(query.toUpperCase())
+        //                 const isBodyMatch = note.body.toUpperCase().includes(query.toUpperCase())
+        //                         return isTitleMatch || isBodyMatch
+        //         });
+        // };
 
         //console.log(findNotes(notes, "work"))
 
 // SORTING ---------------------------------------------
 
         //SORT - sorts the elements of an array, similar to indexOf. takes in a function which lets us to specify the exact comparison behavior(takes an optional compare function)       
-        const sortNotes = function (notes) {
-                notes.sort(function (a, b) {// function for sort is a compare function (if one thing should come before or after a thing)
-                        if (a.title.toLowerCase() < b.title.toLowerCase()) {
-                                return -1
-                        } else if (b.title.toLowerCase() < a.title.toLowerCase()) {
-                                return 1
-                        } else {
-                                return 0
-                        }//if a comes first: -1, if b comes first: 1, if the order is neither one: 0
-                });
-        };            
+        // const sortNotes = function (notes) {
+        //         notes.sort(function (a, b) {// function for sort is a compare function (if one thing should come before or after a thing)
+        //                 if (a.title.toLowerCase() < b.title.toLowerCase()) {
+        //                         return -1
+        //                 } else if (b.title.toLowerCase() < a.title.toLowerCase()) {
+        //                         return 1
+        //                 } else {
+        //                         return 0
+        //                 }//if a comes first: -1, if b comes first: 1, if the order is neither one: 0
+        //         });
+        // };            
 
-        // console.log('a' < 'b') // < = before - returns true
-        // console.log('March' < 'January') // J comes first, returns false 
-        // console.log('a' < 'A')// capital letters come first - returns false
-        // console.log(false < true) // false comes before true, returns true
+        // // console.log('a' < 'b') // < = before - returns true
+        // // console.log('March' < 'January') // J comes first, returns false 
+        // // console.log('a' < 'A')// capital letters come first - returns false
+        // // console.log(false < true) // false comes before true, returns true
 
-        sortNotes(notes);
-        console.log(notes)
+        // sortNotes(notes);
+        //console.log(notes)
+
+        //console.log(notes[1].title)
 
     

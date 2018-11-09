@@ -34,11 +34,11 @@ const todo = [{
 //         // console.log(`${position}. ${item}`);
 //     });
 
-// // CHALLENGE #4 - re-create forEach outcome with a for loop
+// CHALLENGE #4 - re-create forEach outcome with a for loop
 
-//     for (let count = 0; count < todo.length; count++) {
-//         //console.log(`${count + 1}. ${todo[count]}`);
-//     };
+    // for (let count = 0; count < todo.length; count++) {
+    //     console.log(`${count + 1}. ${todo[count]}`);
+    // };
 
 // CHALLENGE #5 - convert array to array of objects, add text and completed property, create function that removes todo by text value
 
@@ -79,46 +79,46 @@ const todo = [{
     // console.log(getThingsTodo(todo))
 
     // alt solution(s)
-    const getThingsTodo = function (todos) {
-        return todos.filter(function (item, index) {
-            return !item.completed
-        });
-    };
+    // const getThingsTodo = function (todos) {
+    //     return todos.filter(function (item, index) {
+    //         return !item.completed
+    //     });
+    // };
 
-    //console.log(getThingsTodo(todo))
+    // //console.log(getThingsTodo(todo))
 
 // CHALLENGE #7 - sort by completed property
 
-    const sortTodos = function (todos) {
-        todos.sort(function (a, b) {
-            if (a.completed < b.completed) {
-                return -1 
-            } else if (b.completed < a.completed) {
-                return 1
-            } else {
-                return 0
-            };
-        });
-    };
+    // const sortTodos = function (todos) {
+    //     todos.sort(function (a, b) {
+    //         if (a.completed < b.completed) {
+    //             return -1 
+    //         } else if (b.completed < a.completed) {
+    //             return 1
+    //         } else {
+    //             return 0
+    //         };
+    //     });
+    // };
     
-    sortTodos(todo);
-    //console.log(todo);
+    // sortTodos(todo);
+    // //console.log(todo);
 
-    // alt solution
-    const sortTodos2 = function (todos) {
-        todos.sort(function (a, b) {
-            if (!a.completed && b.completed) {
-                return -1 
-            } else if (!b.completed && a.completed) {
-                return 1
-            } else {
-                return 0
-            };
-        });
-    };
+    // // alt solution
+    // const sortTodos2 = function (todos) {
+    //     todos.sort(function (a, b) {
+    //         if (!a.completed && b.completed) {
+    //             return -1 
+    //         } else if (!b.completed && a.completed) {
+    //             return 1
+    //         } else {
+    //             return 0
+    //         };
+    //     });
+    // };
     
-    sortTodos2(todo);
-    //console.log(todo);
+    // sortTodos2(todo);
+    // //console.log(todo);
 
 
 
