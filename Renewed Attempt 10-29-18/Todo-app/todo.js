@@ -22,27 +22,12 @@ const todo = [{
              return !item.completed
         });
 
-    //console.log(howMany.length)
-
     const summary = document.createElement("h2");
 
         summary.textContent = `You Have ${howManyTodos.length} Todos left`;
 
         document.querySelector("body").appendChild(summary);
 
-
-    // todo.forEach(function (item, index) {
-
-    //     const todoList = document.createElement("p")
-    //         todoList.textContent = todo[index].text
-
-    //     //console.log(todo[index].text)
-
-    //     document.querySelector("body").appendChild(todoList)
-    // }); // NOT using item in foreach
-
-
-    // alt solution
 
     todo.forEach(function (item, index) {
 
@@ -70,7 +55,9 @@ const todo = [{
 
     document.querySelector("#new-todo").addEventListener("input", function (e) {
         //console.log(e.target.value);
-    })
+    });
+
+// CHALLENGE #5 - 
     
 
 

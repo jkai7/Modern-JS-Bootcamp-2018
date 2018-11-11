@@ -74,8 +74,37 @@ const notes = [{
 // INPUT ------------------------------------------------------------------------
 
     document.querySelector("#search-text").addEventListener("input", function (e) {
-        console.log(e.target.value); // after every change to the input, we can access the value of what what changed
+        //console.log(e.target.value); // after every change to the input, we can access the value of what what changed
     })
+
+// FILTER DATA ------------------------------------------------------------------
+
+    const filters = {
+        serachText: ""
+    }; // set up filters object to store the latest value of the input feild
+
+    const renderNotes = function (notes, filters) {
+        const filteredNotes = notes.filter(function (individualNote) {
+            return individualNote.title.toLowerCase().includes(filters.serachText.toLowerCase())
+        });// filters notes based on what is currently in the input feild
+
+        document.querySelector("#notes").innerHTML = ""; // re-renters on every key stroke (clears div)
+
+        filteredNotes.forEach(function (note) {
+            const noteElement = document.createElement("p");
+                noteElement.textContent = note.title
+                document.querySelector("#notes").appendChild(noteElement)
+        });// add the filtered notes in
+
+    };// creates a way to render the data above while also taking into account the filters object
+
+    renderNotes(notes, filters);// call renderNotes function
+
+    document.querySelector("#search-text").addEventListener("input", function (e) {
+        filters.serachText = e.target.value
+        renderNotes(notes, filters)
+    });// every time the text in the input feild value changes, the searchText in the filters object changes to match the input, and then it runs the renderNotes function to find matching notes to what is in the input feild
+
 
 
 
