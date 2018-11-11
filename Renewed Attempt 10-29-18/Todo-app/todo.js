@@ -13,7 +13,7 @@ const todo = [{
 }, {
     text: "Wash clothes",
     completed: false
-}];
+}]; 
 
 // CHALLENGE #1 - print: you have 2 todos left (in p element), add p for each todo above (use text value)
 
@@ -63,9 +63,14 @@ const todo = [{
 //CHALLENGE #3 - add id on to button, then target it by its id
 
     document.querySelector("#add-todo").addEventListener("click", function (e) {
-        console.log("New Todo Added!")
+        //console.log("New Todo Added!")
     });
 
+// CHALLENGE #4 - add input and show changing value in console
+
+    document.querySelector("#new-todo").addEventListener("input", function (e) {
+        //console.log(e.target.value);
+    })
     
 
 

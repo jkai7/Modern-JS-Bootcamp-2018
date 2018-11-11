@@ -8,7 +8,7 @@ const notes = [{
     title: "Office Modifications",
     body: "Get a new seat"
 }];
-
+ 
 //DOM  manipulation - document object model
 
 // QUERY and REMOVE ------------------------------------
@@ -44,21 +44,21 @@ const notes = [{
 
 // EVENT LISTENER(S) -----------------------------------
 
-    document.querySelector("#create-note").addEventListener("click", function (e) {
-        e.target.textContent = "I was Clicked!!!"
-    });// addElistener - takes a string and a callback funtion that runs when event fires. e is the arg and stands for the event
+    // document.querySelector("#create-note").addEventListener("click", function (e) {
+    //     e.target.textContent = "I was Clicked!!!"
+    // });// addElistener - takes a string and a callback funtion that runs when event fires. e is the arg and stands for the event
 
-    // TARGETING w/ ID and CLASS
+    // // TARGETING w/ ID and CLASS
 
-    // document.querySelectorAll("button")[1].addEventListener("click", function (e) {
-    //     console.log("DELETE All Notes")
-    // });// only works if button is never moved. use id and classes instead
+    // // document.querySelectorAll("button")[1].addEventListener("click", function (e) {
+    // //     console.log("DELETE All Notes")
+    // // });// only works if button is never moved. use id and classes instead
 
-    document.querySelector("#remove-all").addEventListener("click", function (e) {
-        document.querySelectorAll(".note").forEach(function (note) {
-            note.remove()
-        });
-    });// selectes button w/ id then in the event listener, selects all elements with ".note" class, loops through all of them w/ a forEach and then removes each one 
+    // document.querySelector("#remove-all").addEventListener("click", function (e) {
+    //     document.querySelectorAll(".note").forEach(function (note) {
+    //         note.remove()
+    //     });
+    // });// selectes button w/ id then in the event listener, selects all elements with ".note" class, loops through all of them w/ a forEach and then removes each one 
 
     // Target SINGLE
         // p
@@ -71,6 +71,11 @@ const notes = [{
         // h1#title.application
         // h1.application#title
 
+// INPUT ------------------------------------------------------------------------
+
+    document.querySelector("#search-text").addEventListener("input", function (e) {
+        console.log(e.target.value); // after every change to the input, we can access the value of what what changed
+    })
 
 
 
