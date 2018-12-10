@@ -73,9 +73,9 @@ const notes = [{
 
 // INPUT ------------------------------------------------------------------------
 
-    document.querySelector("#search-text").addEventListener("input", function (e) {
-        //console.log(e.target.value); // after every change to the input, we can access the value of what what changed
-    })
+    // document.querySelector("#search-text").addEventListener("input", function (e) {
+    //     //console.log(e.target.value); // after every change to the input, we can access the value of what what changed
+    // })
 
 // FILTER DATA ------------------------------------------------------------------
 
