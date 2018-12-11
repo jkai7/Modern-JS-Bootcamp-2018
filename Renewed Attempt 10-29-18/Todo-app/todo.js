@@ -67,11 +67,11 @@ const todos = [{
             return todo.text.toLowerCase().includes(filters.searchText.toLowerCase())
         })// end filtered todos
 
+        document.querySelector('#todos').innerHTML = '';
+
         const inCompleteTodos = filteredTodos.filter(function (todo, index) {
             return !todo.completed
         })// end inCompleteTodos
-
-        document.querySelector('#todos').innerHTML = ''
     
         const summary = document.createElement('h2');
             summary.textContent = `You Have ${inCompleteTodos.length} Todos left`;
@@ -87,16 +87,8 @@ const todos = [{
 
     renderTodos(todos, filters);
 
-    // document.querySelector('#add-todo').addEventListener('click', function (e) {
-    //     console.log("add new todo")
-    // })// end add todo
-
-    // document.querySelector('#new-todo-text').addEventListener('input', function (e) {
-    //     console.log(e.target.value)
-    // })// end new todo text
-
     document.querySelector('#search-text').addEventListener('input', function (e){
-        filters.serachText = e.target.value
+        filters.searchText = e.target.value
         renderTodos(todos, filters)
     });// end search text
 

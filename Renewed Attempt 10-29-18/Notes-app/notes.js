@@ -105,7 +105,13 @@ const notes = [{
         renderNotes(notes, filters)
     });// every time the text in the input feild value changes, the searchText in the filters object changes to match the input, and then it runs the renderNotes function to find matching notes to what is in the input feild
 
+// Working with Forms -----------------------------------------------------------
 
+    document.querySelector('#name-form').addEventListener('submit', function (e) {
+        e.preventDefault()// prevents submits default behavior
+        console.log(e.target.elements.firstName.value)
+        e.target.elements.firstName.value = ''// wips data after submit
+    })
 
 
 
