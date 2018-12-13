@@ -80,7 +80,7 @@ const notes = [{
 // FILTER DATA ------------------------------------------------------------------
 
     const filters = {
-        serachText: ""
+        searchText: ""
     }; // set up filters object to store the latest value of the input feild
 
     const renderNotes = function (notes, filters) {
@@ -101,17 +101,16 @@ const notes = [{
     renderNotes(notes, filters);// call renderNotes function
 
     document.querySelector("#search-text").addEventListener("input", function (e) {
-        filters.serachText = e.target.value
+        filters.searchText = e.target.value
         renderNotes(notes, filters)
     });// every time the text in the input feild value changes, the searchText in the filters object changes to match the input, and then it runs the renderNotes function to find matching notes to what is in the input feild
 
-// Working with Forms -----------------------------------------------------------
+// WORKING WITH FORMS -----------------------------------------------------------
 
     document.querySelector('#name-form').addEventListener('submit', function (e) {
-        e.preventDefault()// prevents submits default behavior
-        console.log(e.target.elements.firstName.value)
-        e.target.elements.firstName.value = ''// wips data after submit
-    })
+        e.preventDefault()// prevents the submit default behavior
+        e.target.elements.firstName.value = ''// wipes data after submit
+    });
 
 
 

@@ -92,4 +92,16 @@ const todos = [{
         renderTodos(todos, filters)
     });// end search text
 
+// CHALLENGE #6 - 1.create a form with single input for todo text, 2.set up a submit handler and cancel the default action, 3.add a new item to the todos array with the text data (completed value of false), 4.render the application, 5.clear input field value
+
+    document.querySelector('#new-todo').addEventListener('submit', function (e) {
+        e.preventDefault()// prevent default form behavior
+        todos.push({
+            text: e.target.elements.addTodo.value,
+            completed: false
+        })// push the new object into todos array of objects
+        renderTodos(todos, filters)// re-render list 
+        e.target.elements.addTodo.value = ''//reset value of input 
+    })
+ 
 
