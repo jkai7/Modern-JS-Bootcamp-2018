@@ -85,7 +85,7 @@ const notes = [{
 
     const renderNotes = function (notes, filters) {
         const filteredNotes = notes.filter(function (individualNote) {
-            return individualNote.title.toLowerCase().includes(filters.serachText.toLowerCase())
+            return individualNote.title.toLowerCase().includes(filters.searchText.toLowerCase())
         });// filters notes based on what is currently in the input feild
 
         document.querySelector("#notes").innerHTML = ""; // re-renters on every key stroke (clears div)
@@ -107,11 +107,15 @@ const notes = [{
 
 // WORKING WITH FORMS -----------------------------------------------------------
 
-    document.querySelector('#name-form').addEventListener('submit', function (e) {
-        e.preventDefault()// prevents the submit default behavior
-        e.target.elements.firstName.value = ''// wipes data after submit
-    });
+    // document.querySelector('#name-form').addEventListener('submit', function (e) {
+    //     e.preventDefault()// prevents the submit default behavior
+    //     e.target.elements.firstName.value = ''// wipes data after submit
+    // });
+    // (form was deleted from html)
 
+// CHECKBOXES -------------------------------------------------------------------
 
-
+    document.querySelector('#for-fun').addEventListener('change', function (e) {
+        e.target.checked
+    })
 

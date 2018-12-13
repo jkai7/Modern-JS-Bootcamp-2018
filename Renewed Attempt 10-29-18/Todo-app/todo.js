@@ -59,13 +59,37 @@ const todos = [{
 // CHALLENGE #5 - 1. set up a div to contain the todos. 2. create a filters object that has a search text property and wire up a new filter input to change it. 3. create a renderTodos function to render and re-render the latest filtered data
 
     const filters = {
-        searchText: ''
+        searchText: '',
+        hideCompleted: false
     };// end filters
 
     const renderTodos = function (todos, filters) {
+
         const filteredTodos = todos.filter(function (todo) {
-            return todo.text.toLowerCase().includes(filters.searchText.toLowerCase())
-        })// end filtered todos
+            const searchTextMatch = todo.text.toLowerCase().includes(filters.searchText.toLowerCase())
+            const hideCompletedMatch = !filters.hideCompleted || !todo.completed
+            
+            return searchTextMatch && hideCompletedMatch
+        })
+
+        // ALT SOLUTION #1
+        
+        // let filteredTodos = todos.filter(function (todo) {
+        //     return todo.text.toLowerCase().includes(filters.searchText.toLowerCase())
+        // })// end filtered todos
+
+        // filteredTodos = filteredTodos.filter(function (todo) {
+        //     return !filters.hideCompleted || !todo.completed //always returns false for todos that have been completed and always true for todos that have not been completed
+
+        // ALT SOLUTION #2
+
+        //     if (filters.hideCompleted){
+        //         return !todo.completed
+        //     }else{
+        //         return true
+        //     }
+
+        //  })
 
         document.querySelector('#todos').innerHTML = '';
 
@@ -104,4 +128,9 @@ const todos = [{
         e.target.elements.addTodo.value = ''//reset value of input 
     })
  
+// CHALLENGE #7 - 1.create a checkbox and set up event listener -> "hide completed", 2.create new hide completed filter (default false), 3. update hideCompleted and rerender list on checkbox change, 4. setup renderTodos to remove completed items
 
+    document.querySelector('#hide-completed').addEventListener('change', function (e) {
+        filters.hideCompleted = e.target.checked
+        renderTodos(todos, filters)
+    });

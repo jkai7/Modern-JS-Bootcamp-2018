@@ -6,16 +6,24 @@
 
     <body>
 
-        <h1>Todos</h1>
+        <h1>Todos</h1> 
+        
+        <div id="how-many-todos"></div>
 
         <input id="search-text" type="text" placeholder="filter todos">
 
-        <div id="todos"></div>
+        <label>
+            <input id="hide-completed" type="checkbox"> Hide Completed
+        </label>
+
+        <br><br>
 
         <form id="new-todo">
             <input type="text" placeholder="Something to do" name="addTodo">
             <button>Add todo</button>
         </form>
+
+        <div id="todos"></div>
 
         <script src="todo.js"></script>
     </body>
