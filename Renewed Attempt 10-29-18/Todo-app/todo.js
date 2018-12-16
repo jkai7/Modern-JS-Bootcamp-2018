@@ -13,9 +13,6 @@ const todos = [{
 }, {
     text: "Wash clothes",
     completed: false
-}, {
-    text: "Fast for 40 hours",
-    completed: true
 }];
 
 // CHALLENGE #1 - print: you have 2 todos left (in p element), add p for each todo above (use text value)
