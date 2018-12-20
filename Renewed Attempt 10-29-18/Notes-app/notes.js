@@ -100,7 +100,7 @@ const notes = [{
 
     renderNotes(notes, filters);// call renderNotes function
 
-    document.querySelector("#search-text").addEventListener("input", function (e) {
+    document.querySelector("#search-text").addEventListener("input", function(e) {
         filters.searchText = e.target.value
         renderNotes(notes, filters)
     });// every time the text in the input feild value changes, the searchText in the filters object changes to match the input, and then it runs the renderNotes function to find matching notes to what is in the input feild
@@ -117,5 +117,10 @@ const notes = [{
 
     document.querySelector('#for-fun').addEventListener('change', function (e) {
         e.target.checked
-    })
+    });
 
+// DROPDOWNS --------------------------------------------------------------------
+
+    document.querySelector('#filter-by').addEventListener('change', function(e) {
+        console.log(e.target.value)
+    });
