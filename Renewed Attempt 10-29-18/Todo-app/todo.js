@@ -132,6 +132,5 @@ const todos = [{
 
     document.querySelector('#hide-completed').addEventListener('change', function (e) {
         filters.hideCompleted = e.target.checked
-        console.log(e.target.checked)
         renderTodos(todos, filters);
     });
