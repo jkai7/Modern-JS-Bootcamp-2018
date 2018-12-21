@@ -83,6 +83,23 @@ const notes = [{
         searchText: ""
     }; // set up filters object to store the latest value of the input feild
 
+    // const user = {
+    //     name: "Jens",
+    //     age: 31
+    // }
+
+    // const userJSON = JSON.stringify(user) // JSON(javascript object notation), stringify takes in object or array and converts it to a string so that it is able to be saved on local storage
+
+    // console.log(userJSON)
+
+    // localStorage.setItem('user', userJSON) // userJSON is a string representation of the original user object
+
+    const userJSON = localStorage.getItem('user')
+
+    const user = JSON.parse(userJSON) // parse converts JSON back to JS object  
+
+    console.log(`${user.name} is ${user.age}`) // able to console log user object that was saved on local storage after parsing JSON string back into JS object
+
     const renderNotes = function (notes, filters) {
         const filteredNotes = notes.filter(function (individualNote) {
             return individualNote.title.toLowerCase().includes(filters.searchText.toLowerCase())
@@ -124,3 +141,17 @@ const notes = [{
     document.querySelector('#filter-by').addEventListener('change', function(e) {
         console.log(e.target.value)
     });
+
+// LOCAL STORAGE CRUD METHODS ---------------------------------------------------
+
+    // localStorage.setItem('location', 'Philadelphia') //first item is key, second is value - This is the C (create) and U (update) in CRUD
+
+    // console.log(localStorage.getItem('location'))// is reading the value key from local storage, this is the R (read) in CRUD
+
+    // localStorage.removeItem('location'); // removes the key from local storage, this is the D (delete) in CRUD
+
+    // localStorage.clear()// removes everything, no matter what the key is
+
+    // localStorage only stores strings
+
+    
