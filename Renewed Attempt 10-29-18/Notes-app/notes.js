@@ -144,7 +144,7 @@ const notes = [{
 
 // LOCAL STORAGE CRUD METHODS ---------------------------------------------------
 
-    // localStorage.setItem('location', 'Philadelphia') //first item is key, second is value - This is the C (create) and U (update) in CRUD
+    localStorage.setItem('location', 'Philadelphia') //first item is key, second is value - This is the C (create) and U (update) in CRUD
 
     // console.log(localStorage.getItem('location'))// is reading the value key from local storage, this is the R (read) in CRUD
 
