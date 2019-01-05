@@ -12,6 +12,9 @@ const todos = [{
     completed: false
 }, {
     text: "Wash clothes",
+    completed: false,
+},{
+    text: "Apply to Jobs",
     completed: false
 }]; 
 
