@@ -16,7 +16,7 @@ const todos = [{
 },{
     text: "Apply to Jobs",
     completed: false
-}]; 
+}];  
 
 // CHALLENGE #1 - print: you have 2 todos left (in p element), add p for each todo above (use text value)
 
