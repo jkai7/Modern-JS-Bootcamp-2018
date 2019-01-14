@@ -155,3 +155,5 @@ const notes = [{
     // localStorage only stores strings so you need JSON stringify to turn objects and arrays into strings to store in local storage. Then, use parse to be able to continue to work with them stored in local storage and alsobe able to accesss object properties
 
     
+
+    
