@@ -86,7 +86,7 @@ const notes = [{
     // const user = {
     //     name: "Jens",
     //     age: 31
-    // }
+    // } 
 
     // const userJSON = JSON.stringify(user) // JSON(javascript object notation), stringify takes in object or array and converts it to a string so that it is able to be saved on local storage
 
