@@ -6,7 +6,7 @@ const notes = [{
     body: "Exercise, Eat Better, Study Harder"
 }, {
     title: "Office Modifications",
-    body: "Get a new seat"
+    body: "Get a new seat",
 }];  
  
 //DOM  manipulation - document object model
