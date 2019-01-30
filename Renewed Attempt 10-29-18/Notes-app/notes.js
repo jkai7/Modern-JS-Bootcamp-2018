@@ -9,6 +9,7 @@ const notes = [{
     body: "Get a new seat",
 }];  
  
+
 //DOM  manipulation - document object model
 
 // QUERY and REMOVE ------------------------------------
